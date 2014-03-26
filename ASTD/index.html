@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <title>EXPERIENCE FIERCE —  send yourself some materials</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+
+        <div id="main-container" class="float center">
+            <div id="header" class="float">
+                <span>&nbsp;</span>
+            
+            
+            </div>
+            <div id="programs" class="float">
+                <span>&nbsp;</span>
+                <form name="ASTD2013ipadForm" action="mailto.php" method="POST" id="main_form">
+                    <div id="formContainer">
+                        
+                        <div id="checkboxContainer">
+                        <div id="formProgramOverviews" class="checkboxAlign" align="right">
+                            <br />
+                            <div id="formPO-corp" class="float">
+                                <div class="checkboxSpace"><input type="checkbox" name="ProgramOverview-Conversations" value="PO-FC"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="ProgramOverview-ConversationsO2" value="PO-FCO2"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="ProgramOverview-Generations" value="PO-FG"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="ProgramOverview-Negotiations" value="PO-FN"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="ProgramOverview-Accountability" value="PO-FA"></div> <br />
+                            </div>
+                            <div id="formPO-fits" class="float">
+                                <div class="checkboxSpace"><input type="checkbox" name="ProgramOverview-FieldGuide" value="PO-FITS"></div> <br />
+                            </div>
+                            <br />
+                        </div>
+                        <div id="formCaseStudies" class="checkboxAlign" align="right">
+                            <br />
+                            <div id="formCS-corp" class="float">
+                                <div class="checkboxSpace"><input type="checkbox" name="CaseStudy-Costco" value="CS-Costco"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="CaseStudy-CrateBarrel" value="CS-CrateBarrel"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="CaseStudy-Presbyterian" value="CS-Presbyterian"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="CaseStudy-UW" value="CS-UW"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="CaseStudy-ErnstYoung" value="CS-ErnstYoung"></div> <br />
+                            </div>
+                            <div id="formCS-fits" class="float">
+                                <div class="checkboxSpace"><input type="checkbox" name="CaseStudy-Joslin" value="CS-FITS-Joslin"></div> <br />
+                            </div>
+                            <br />
+                        </div>
+                        <div id="formWhitePapers" class="checkboxAlign" align="right">
+                            <br />
+                            <div id="formWP-corp" class="float">
+                                <div class="checkboxSpace"><input type="checkbox" name="Whitepaper-ThreePillars" value="WP-ThreePillars"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="Whitepaper-Linchpin" value="WP-Linchpin"></div> <br />
+                                <div class="checkboxSpace"><input type="checkbox" name="Whitepaper-EmployeeEngagement" value="WP-Engagegement"></div> <br />
+                            </div>
+                            <div id="formWP-fits" class="float">
+                                <div class="checkboxSpace"><input type="checkbox" name="Whitepaper-EducationReform" value="WP-FITS-Education"></div> <br />
+                            </div>
+                            <br />
+                        </div>
+                        </div><!-- checkboxContainer -->
+                        
+                        <div id="textboxContainer" class="float fullWidth">
+                            
+                            <input id="FN-field" type="text" name="first_name" placeholder="First Name" height="40px" width="300px">&nbsp;&nbsp;&nbsp;
+                            <input id="LN-field" type="text" name="last_name" placeholder="Last Name" height="40px" width="400px"><br /><br />
+                            <input id="email-field" type="email" name="email" placeholder="Email Address" height="40px" width="718px">
+                           
+                            
+                        </div>
+                        
+                        <div id="newsletterContainer" class="float fullWidth">
+                            <div class="newsletterCheckbox"><input type="checkbox" name="Newsletter" value="Newsletter-Yes"></div>
+                        </div>
+                        
+                        <div id="buttonContainer" class="float fullWidth">
+                            <div id="submitBtn"><input type="image" src="http://www.fierceinc.com/uploads/images/landing-pages/astd2013/submit-btn.jpg" width="285" height="48" alt="SUBMIT" /></div>
+                        </div>
+                        
+                        
+                        
+                    </div><!-- formContainer -->
+                
+                
+                
+                </form>
+            
+            </div>
+            <div id="thankYou" class="float hidden">
+                <span>&nbsp;</span>
+            
+            
+            </div>
+        </div>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript">
+            $('#main_form').on('submit', function(e){
+                e.preventDefault();
+                $('#thankYou').removeClass('hidden');
+                    $.post('mailto.php',$(this).serialize(), function(data) {
+                });
+            });
+        </script>
+    </body>
+</html>
