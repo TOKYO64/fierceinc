@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align:center;
+    background:#6e6e6e;
+    margin:0 auto;
+}
+
+.center {
+    margin:0 auto;
+    width:1024px;
+    }
+    
+.float {
+    display:block;
+    float:left;
+    clear:both;
+}
+
+.hidden {
+    background-color:#6f6f6f;
+    visibility:hidden;
+}
+
+.fullWidth{
+    width:100%;
+    }
+
+.checkboxAlign {
+    width:32.5%;
+    float:left;
+    clear:none;
+    display:block;
+}
+    
+.checkboxSpace{
+    height:20px;
+
+    float:left;
+    clear:both;
+    display:block;
+    text-alight:left;
+    alight:right;
+    clear:both;
+    margin:0px 30px 0px 30px;
+}
+
+.newsletterCheckbox{
+    margin-top:62px;
+    padding-right:180px;
+    width:40px;
+    float:right;}
+
+#header{
+    background-image:url('http://www.fierceinc.com/uploads/images/landing-pages/astd2013/astd-2013-formPage-header.jpg');
+    height: 438px;
+    width: 1024px;
+    background-repeat:no-repeat;
+}
+
+#programs{
+    background-image:url('http://www.fierceinc.com/uploads/images/landing-pages/astd2013/astd-2013-formPage-form.jpg');
+    height: 966px;
+    width: 1024px;
+    background-repeat:no-repeat;
+}
+
+#formContainer{
+    height:900px;
+}
+
+#formProgramOverviews .checkboxSpace{
+    margin-top:20px;
+    margin-bottom:10px;
+    width:40px;
+    }
+    
+#formProgramOverviews #formPO-corp{
+    height:285px;
+    }
+    
+#formProgramOverviews #formPO-fits{
+    height:80px;
+    }
+    
+#formProgramOverviews #formPO-fits .checkboxSpace{
+    margin-top:48px;
+}
+
+
+
+#formCaseStudies .checkboxSpace{
+    margin-top:20px;
+    margin-bottom:0px;
+    margin-left:40px;
+    margin-right:20px;
+    }
+    
+#formCaseStudies #formCS-corp{
+    height:285px;
+    }
+    
+#formCaseStudies #formCS-fits{
+    height:80px;
+    }
+    
+#formCaseStudies #formCS-fits .checkboxSpace{
+    margin-top:48px;
+}
+
+
+#formWhitePapers .checkboxSpace{
+    margin-top:20px;
+    margin-bottom:50px;
+    }
+    
+#formWhitePapers #formWP-corp{
+    height:285px;
+    }
+    
+#formWhitePapers #formWP-fits{
+    height:80px;
+    }
+    
+#formWhitePapers #formWP-fits .checkboxSpace{
+    margin-top:48px;
+}
+
+#textboxContainer{
+    height:334px;
+padding-top:240px;
+margin-bottom:-240px;}
+
+#textboxContainer input{
+height:28px;
+padding:6px;
+    }
+    
+    
+input#FN-field, input#LN-field, input#email-field{
+border:0px;
+-moz-border-radius:4px; /* Firefox */
+-webkit-border-radius: 4px; /* Safari, Chrome */
+-khtml-border-radius: 4px; /* KHTML */
+border-radius: 4px; /* CSS3 */}
+
+input#FN-field{
+width:300px;}
+
+input#LN-field{
+width:374px;}
+
+input#email-field{
+width:700px;}
+
+#newsletterContainer{
+    height:60px;
+    text-align:center;
+    vertical-align:middle;}
+
+#buttonContainer{
+    height:0px;}
+    
+#submitBtn{
+    width:300px;
+    height:60px;
+    float:right;
+    margin-top:60px;
+    padding-right:154px;}
+
+
+#thankYou{
+    background-image:url('http://www.fierceinc.com/uploads/images/landing-pages/astd2013/astd-2013-formPage-thankYou.jpg');
+    height: 163px;
+    width: 1024px;
+    background-repeat:no-repeat;
+}
+
+
+    
