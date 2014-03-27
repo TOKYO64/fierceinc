@@ -1,0 +1,326 @@
+/* --- GENERAL --- */
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+body {
+	background: #c5c3be;
+}
+h1, h2, h3, p {
+	margin-bottom: .5em;
+}
+p {
+	margin-top: .5em;
+}
+a {
+	color: #0072bc;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	border: none;
+}
+
+/* --- LAYOUT --- */
+#wrap {
+	margin: 0px auto;
+	width: 796px;
+	background: #c5c3be url('../images/borderMainbg.png') repeat-y top center;
+}
+#borderTop {
+	width: 100%;
+	height: 17px;
+	background: #c5c3be url('../images/borderTopbg.png') no-repeat top center;
+}
+#main {
+	margin: 0px 8px;
+	background: #fff;
+	position: relative;
+}
+#header {
+	width: 100%;
+	height: 119px;
+	position: relative;
+}
+#logo {
+	position: relative;
+	left: 45px;
+	top: 8px;
+}
+#homelink {
+	position: absolute;
+	left: 18px;
+	bottom: 13px;
+}
+#nav {
+	position: absolute;
+	left: 45px;
+	bottom: 0px;
+}
+#nav ul {
+	list-style: none; /* it's got no style...  :) */
+	margin-left: 0px;
+}
+#nav ul li {
+	float: left;
+	height: 36px;
+}
+#feature {
+	height: 304px;
+	position: relative;
+}
+
+#featRt {
+	width: 178px;
+	height: 283px;
+	float: right;
+	margin: 11px 11px 0px 0px;
+	background: url('../images/featRtbg.gif') no-repeat top left;
+}
+#featRt img.upper {
+	margin-top: 13px;
+}
+#featRt img.button {
+	margin-bottom: 10px;
+}
+#featLt {
+	width: 166px;
+	height: 304px;
+	float: left;
+	margin: 0px;
+}
+#featLt img.upper {
+	margin-top: 25px;
+}
+#featLt img.button {
+	margin-bottom: 10px;
+}
+#butBuyBook {
+	position: absolute;
+	right: 45px;
+	top: 700px;
+}
+#featVidlink {
+	position: absolute;
+	right: 16px;
+	top: 24px;
+	width: 249px;
+	height: 152px;
+	color: #fff;
+}
+#featVidlink img {
+	width: 249px;
+	height: 152px;
+	border: none;
+}
+#featVidlink h4 {
+	margin-left: 11px;
+	margin-top: 10px;
+}
+#content {
+	margin: 24px 221px 0px 163px;
+	font-size: 90%; /* konqueror scales this slightly further down than others */
+}
+#buyfc {
+	margin: 15px 0px 0px 163px;
+}
+.resourceItem {
+	clear: both;
+	margin-top: 35px;
+}
+#.resourceItem img {
+	margin-right: 13px;
+}
+#footer {
+	margin: 90px 45px 20px 163px;
+}
+#footer .links {
+	position: absolute;
+	right: 45px;
+}
+#borderBot {
+	width: 100%;
+	height: 17px;
+	background: #c5c3be url('../images/borderBotbg.png') no-repeat top center;
+}
+.clear {
+	clear: both;
+}
+.right {
+	float: right;
+}
+
+/* --- SECTION NAV --- */
+#sectionNav {
+	position: absolute;
+	left: 0px;
+	top: 437px;
+	float: left;
+	width: 126px;
+}
+#sectionNav ul {
+	list-style: none;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 80%;
+	font-weight: bold;
+	margin: 0px;
+}
+#sectionNav ul li {
+	padding: 10px 8px;
+	border-top: 1px dotted;
+}
+#sectionNav ul li a {
+	color: #555;
+}
+#sectionNav ul li a:hover {
+	color: #f68b1f;
+	text-decoration: none;
+}
+#sectionNav ul li#first {
+	border-top: none;
+}
+#sectionNav ul li.active {
+	background: #fbe6d5;
+}
+#sectionNav ul li.active a {
+	color: #f68b1f;
+}
+
+/* --- TEXT STYLING --- */
+body, table {
+	font-size: 83.3%; /* most browsers default to 12pt, so 83.3% ~= 10pt */
+}
+body, table, .sans {
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+body, table {
+	color: #555;
+}
+.colorText {
+	color: #555; /* gets its own entry to address a list related issue */
+}
+.red {
+	color: #ff0000;
+}
+h1, h2, h3, h4, .serif {
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+h1 {
+	font-size: 200%
+}
+h2 {
+	font-size: 160%
+}
+h3 {
+	font-size: 130%
+}
+h4 {
+	font-size: 120%
+}
+p {
+	line-height: 1.4em;
+}
+.smcite {
+	margin: 10px 50px 10px 50px;
+	text-indent: -1em;
+	font-size: 80%;
+	color: #7e7e7e;
+	line-height: 1.15em;
+}
+.smcaps {
+	text-transform: uppercase;
+	font-size: 80%;
+}
+.colorPrimary {
+	color: #619ac4;
+}
+.colorSecondary {
+	color: #f68b1f;
+}
+.larger {
+	font-size: 140%;
+}
+.regular {
+	font-size: 66.7%;
+}
+.bold {
+	font-weight: bold;
+}
+.em {
+	font-style: italic;
+}
+ol, ul {
+	margin-left: 20px;
+}
+ol li {
+	line-height: 1em;
+}
+ul.annlam li {
+	margin: .5em auto;
+}
+ol.lower {
+	list-style: lower-latin;
+}
+ol.larger li {
+	margin: .5em auto;
+	line-height: .8em;
+}
+#footer p {
+	font-size: 75%;
+}
+#footer .links {
+	text-transform: uppercase;
+	font-size: 80%;
+} 
+
+/* --- RESOURCE PAGE FORM --- */
+#resourceContent {
+	margin: 0px 122px 0px 143px;
+	font-size: 90%; /* konqueror scales this slightly further down than others */
+}
+.ml20 {
+	margin-left: 20px;
+}
+#resourceForm {
+	background: #eee3d3 url('../images/resFormBot.png') no-repeat left bottom;
+	padding: 3px 0px;
+	position: relative;
+	color: #f68b1f;
+	text-transform: uppercase;
+}
+#resourceForm table {
+	margin: 20px 0px;
+	width: 425px;
+}
+#resourceForm td {
+	padding-left: 20px;
+	color: #f68b1f;
+}
+#resourceForm input {
+	width: 335px;
+	height: 20px;
+	padding:5px;
+	border: none;
+	background: #fff;
+	margin-top: 3px;
+}
+#resourceForm select {
+	text-transform: capitalize;
+	margin-top: 3px;
+}
+#resourceForm input.req {
+	border: #ff0000 1px solid;
+}
+#resourceForm table td .reqtxt_hide {
+	display: none;
+}
+#resourceForm table td .reqtxt_show {
+	color: #ff0000;
+	display: inline;
+}
