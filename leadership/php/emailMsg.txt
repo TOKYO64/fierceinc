@@ -1,0 +1,23 @@
+Dear {FIRSTNAME},
+
+Thank you for your interest in Fierce Leadership! Here is a link to the free resources that you requested:
+
+{RESOURCEDOWNLOADLINK}
+
+(If the link above does not appear clickable or does not open a browser window when you click it, copy it and paste it into your web browser's location bar.) 
+
+Throughout the year, you will hear from us with: 
+
+    * Advice about putting Fierce practices to work every day
+
+    * Fierce Leadership news 
+
+    * Invitations to Fierce events 
+
+Look for your first e-newsletter from us soon. In the interim, know that you can unsubscribe at any time by using the link below. And welcome! 
+
+- Susan Scott
+
+P.S. Be sure to add this address to your contact list to ensure delivery: info@fierceinc.com.
+
+To unsubscribe, click here:  {UNSUBSCRIBELINK}
