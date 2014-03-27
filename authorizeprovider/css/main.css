@@ -1,0 +1,587 @@
+/* --- GENERAL --- */
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+body {
+	background: #c5c3be;
+}
+h1, h2, h3 {
+	color: #465A68;
+	margin-bottom: .5em;
+}
+p {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+a {
+	color: #005294;
+	text-decoration: none;
+	outline-width: 0;
+}
+
+a:hover {
+	color: #EA802D;
+}
+
+img {
+	border: none;
+}
+
+/* --- LAYOUT --- */
+#wrap {
+	margin: 0px auto;
+	width: 796px;
+	background: #c5c3be url(../images/borderMainbg.png) repeat-y top center;
+}
+#borderTop {
+	width: 100%;
+	height: 17px;
+	background: #c5c3be url(../images/borderTopbg.png) no-repeat top center;
+}
+#main {
+	margin: 0px 8px;
+	background: #fff;
+	position: relative;
+}
+#header {
+	width: 100%;
+	height: 119px;
+	position: relative;
+}
+#logo {
+	position: relative;
+	left: 14px;
+	top: 8px;
+}
+#homelink {
+	position: absolute;
+	left: 18px;
+	bottom: 13px;
+}
+#nav {
+	position: absolute;
+	left: 97px;
+	bottom: 0px;
+}
+#nav ul {
+	list-style: none; /* it's got no style...  :) */
+	margin-left: 0px;
+}
+#nav ul li {
+	float: left;
+	height: 36px;
+	margin-right: 1px;
+}
+
+#nav ul li a {
+	outline-width: 0;
+}
+
+#top_image {
+	width: 780px;
+	height: 214px;
+	background: #717073;
+}
+
+#home_powerpoint {
+	position: absolute;
+	left: 630px;
+	top: 348px;
+	height: 50px;
+}
+
+#home_powerpoint img {
+	float: left;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+#home_powerpoint div {
+	float: left;
+	font-family: Arial, sans-serif;
+	font-size: 0.75em;
+	width: 70px;
+	height: 40px;
+}
+
+#content {
+	margin: 24px 141px 0px 163px;
+	/* font-size: 90%; konqueror scales this slightly further down than others */
+	font-size: 1em;
+}
+
+#content p {
+	color: #666666;
+}
+
+#content .participation {
+	margin-top: 65px;
+}
+
+#content ul {
+	margin-top: 10px;
+}
+
+#content ul li {
+	margin-bottom: 10px;
+	line-height: 1.5em;
+}
+
+#content a.book {
+	color: #EA802D;
+	text-decoration: none;
+}
+
+#content a.book:hover {
+	color: #005294;
+}
+
+#footer {
+	margin: 90px 45px 20px 115px;
+	color: #7FA4BF;
+	font-family: Arial;
+}
+
+#footer a {
+	color: #7FA4BF;
+}
+
+#footer a:hover {
+	color: #EA802D;
+}
+
+#footer .links {
+	position: absolute;
+	right: 45px;
+}
+
+#footer p {
+	font-size: 83%;
+}
+
+#footer .links {
+	font-size: 83%;
+} 
+
+#borderBot {
+	width: 100%;
+	height: 17px;
+	background: #c5c3be url(../images/borderBotbg.png) no-repeat top center;
+}
+.clear {
+	clear: both;
+}
+.right {
+	float: right;
+}
+
+/* --- SECTION NAV --- */
+#sectionNav {
+	position: absolute;
+	left: 0px;
+	top: 357px;
+	float: left;
+	width: 126px;
+	font-family: Arial, sans-serif;
+}
+#sectionNav ul {
+	list-style: none;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 80%;
+	font-weight: bold;
+	margin: 0px;
+}
+#sectionNav ul li {
+	padding: 10px 8px;
+	border-top: 1px dotted;
+}
+#sectionNav ul li a {
+	color: #555;
+}
+#sectionNav ul li a:hover {
+	color: #f68b1f;
+	text-decoration: none;
+}
+#sectionNav ul li#first {
+	border-top: none;
+}
+#sectionNav ul li.active {
+	background: #fbe6d5;
+}
+#sectionNav ul li.active a {
+	color: #f68b1f;
+}
+
+/* --- TEXT STYLING --- */
+body, table {
+	font-size: 83.3%; /* most browsers default to 12pt, so 83.3% ~= 10pt */
+}
+body, table, .sans {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+body, table {
+	color: #555;
+}
+.colorText {
+	color: #555; /* gets its own entry to address a list related issue */
+}
+.red {
+	color: #ff0000;
+}
+h1, h2, h3, h4, .serif {
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 180%;
+}
+
+h2 {
+	font-size: 160%;
+}
+h3 {
+	font-size: 130%;
+}
+h4 {
+	font-size: 120%;
+}
+p {
+	line-height: 1.5em;
+}
+.colorPrimary {
+	color: #619ac4;
+}
+.colorSecondary {
+	color: #f68b1f;
+}
+.larger {
+	font-size: 140%;
+}
+.regular {
+	font-size: 66.7%;
+}
+.bold {
+	font-weight: bold;
+}
+.em {
+	font-style: italic;
+}
+ol, ul {
+	margin-left: 20px;
+}
+ol li {
+	line-height: 1em;
+}
+ul.annlam li {
+	margin: .5em auto;
+}
+ol.lower {
+	list-style: lower-latin;
+}
+ol.larger li {
+	margin: .5em auto;
+	line-height: .8em;
+}
+
+/* --- Download Form --- */
+#download-content {
+	margin: 24px 71px 0px 115px;
+	font-size: 1em;
+}
+
+#download-content p {
+	color: #666666;
+}
+
+#download-content .error {
+	color: #AC2E34;
+}
+
+#download-apply {
+	width: 385px;
+	margin-top: 20px;
+	padding-top: 20px;
+	font-family: Arial, sans-serif;
+	background: #F5F1EB;
+}
+
+#download-apply form {
+	width: 320px;
+	padding: 5px 40px 50px 25px;
+}
+
+#download-apply form .field {
+	float:left;
+	/* display: inline; */
+	display: block;
+	position: relative;
+	/* TODO: Fix this IE6 positioning hack: without it the fields end up at the top of the page. */
+	_top: 250px;
+	_left: 120px;
+	/* End hack */
+	height: 60px;
+	margin-right: 20px;
+}
+
+#download-apply form .field label {
+	position: absolute;
+	left: 10px;
+	top: -3px;
+	width: 100px;
+	height: 15px;
+	color: #EA802D;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+#download-apply form .field input {
+	position: absolute;
+	-moz-border-radius: 0px;
+	left: 0px;
+	top: 15px;
+	height: 18px;
+}
+
+#download-apply form .field input,
+#download-apply form input {
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+}
+
+#download-apply form .submit_button {
+	float: left;
+	border: 0 none;
+	-moz-border-radius: 0px;
+	padding: 0;
+}
+
+#download-content #powerpoint {
+	height: 50px;
+	margin-top: 40px;
+}
+
+#download-content #powerpoint img {
+	float: left;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+#download-content #powerpoint div {
+	float: left;
+	font-family: Arial, sans-serif;
+	font-size: 0.75em;
+	width: 70px;
+	height: 40px;
+}
+
+/* --- Application Form --- */
+#apply-content {
+	margin: 24px 71px 0px 115px;
+	/* font-size: 90%; konqueror scales this slightly further down than others */
+	font-size: 1em;
+}
+
+#apply-content p {
+	color: #666666;
+}
+
+#apply-content .question {
+	color: #EA802D;
+	margin-bottom: 2px;
+}
+
+#apply-content .years {
+	margin: 0 0 5px 0;
+}
+
+#apply-content .error {
+	color: #AC2E34;
+}
+
+#ap-apply {
+	width: 585px;
+	font-family: Arial, sans-serif;
+}
+
+#ap-apply h2 {
+	color: #B6BC56;
+	font-size: 2.0em;
+	font-family: Georgia, "Lucida Grande", Verdana, sans-serif;
+	font-weight: normal;
+}
+
+#ap-apply form {
+	width: 520px;
+	padding: 5px 40px 50px 25px;
+	background: #F5F1EB;
+}
+
+#ap-apply form .field {
+	float:left;
+	/* display: inline; */
+	display: block;
+	position: relative;
+	/* TODO: Fix this IE6 positioning hack: without it the fields end up at the top of the page. */
+	_top: 300px;
+	_left: 120px;
+	/* End hack */
+	height: 60px;
+	margin-right: 20px;
+}
+
+#ap-apply #step2 .field {
+	/* TODO: Fix this IE6 positioning hack: without it the fields end up at the top of the page. */
+	/* _top: 450px; */
+	/* _left: 120px; */
+	/* End hack */
+}
+
+#ap-apply form .field label {
+	position: absolute;
+	left: 10px;
+	top: -3px;
+	width: 100px;
+	height: 15px;
+	color: #EA802D;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+#ap-apply form .field .checkbox_label {
+	left: 25px;
+	top: 12px;
+}
+
+#ap-apply form .field input,
+#ap-apply form .field select {
+	position: absolute;
+	-moz-border-radius: 0px;
+	left: 0px;
+	top: 15px;
+	height: 18px;
+}
+
+#ap-apply #step2 .field_titles {
+	float: left;
+	width: 112px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#ap-apply #step2 .field_titles .field_name {
+	margin: 0 0 15px 0;
+}
+
+#ap-apply #step2 .field_values {
+	float: left;
+	width: 17px;
+}
+
+#ap-apply #step2 .field_values input {
+	margin-bottom: 5px;
+}
+
+#ap-apply form .field input,
+#ap-apply form input {
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+}
+
+#ap-apply form textarea {
+	border: 1px solid #CCCCCC;
+}
+
+#ap-apply form .checkbox {
+	float: left;
+	clear: both;
+	margin: 0 0 3px 0;
+}
+
+#ap-apply form .checkbox input {
+	margin-top: 2px;
+	vertical-align: top;
+}
+
+#ap-apply form .checkbox span {
+	margin-left: 10px;
+}
+
+#ap-apply form .radio {
+	margin: 0 5px 0 5px;
+}
+
+#ap-apply form .field select {
+	height: 20px;
+	font-size: 1.0em;
+}
+
+#ap-apply h4 {
+	margin: 15px 0 20px 0;
+}
+
+#ap-apply p {
+	margin-top: 20px;
+}
+
+#ap-apply .required {
+	margin: 0 0 5px 25px;
+	font-size: 0.8em;
+	color: #717073;
+	text-transform: uppercase;
+}
+
+#ap-apply .optional {
+	color: #717073;
+}
+
+#ap-apply .customize {
+	margin-left: 10px;
+	font-size: 0.75em;
+	color: #717073;
+	text-transform: uppercase;
+}
+
+#ap-apply form .next_button,
+#ap-apply form .submit_button {
+	float: right;
+	border: 0 none;
+	-moz-border-radius: 0px;
+	padding: 0;
+}
+
+/* --- Events Page --- */
+.eventLink {
+	color:#AC2E34;
+	font-size:0.85em;
+	text-transform:uppercase;
+	width: 100px;
+}
+
+.eventLink a {
+	color:#0064A4;
+	text-decoration:none;
+}
+
+.eventDate {
+	color:#EA802C;
+	font-weight:bold;
+}
+
+.eventLocation {
+	font-size:0.9em;
+	text-transform:uppercase;
+}
+
+.eventName {
+	font-style:italic;
+}
+
+.eventDesc {
+	padding-top:5px;
+}
